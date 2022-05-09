@@ -1,0 +1,14 @@
+C:\Users\52999\source\repos\PlatziProyecto\Etapa1\Etapa1\bin\Debug\netcoreapp3.1\Etapa1.exe
+C:\Users\52999\source\repos\PlatziProyecto\Etapa1\Etapa1\bin\Debug\netcoreapp3.1\Etapa1.deps.json
+C:\Users\52999\source\repos\PlatziProyecto\Etapa1\Etapa1\bin\Debug\netcoreapp3.1\Etapa1.runtimeconfig.json
+C:\Users\52999\source\repos\PlatziProyecto\Etapa1\Etapa1\bin\Debug\netcoreapp3.1\Etapa1.runtimeconfig.dev.json
+C:\Users\52999\source\repos\PlatziProyecto\Etapa1\Etapa1\bin\Debug\netcoreapp3.1\Etapa1.dll
+C:\Users\52999\source\repos\PlatziProyecto\Etapa1\Etapa1\bin\Debug\netcoreapp3.1\Etapa1.pdb
+C:\Users\52999\source\repos\PlatziProyecto\Etapa1\Etapa1\obj\Debug\netcoreapp3.1\Etapa1.csproj.AssemblyReference.cache
+C:\Users\52999\source\repos\PlatziProyecto\Etapa1\Etapa1\obj\Debug\netcoreapp3.1\Etapa1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\52999\source\repos\PlatziProyecto\Etapa1\Etapa1\obj\Debug\netcoreapp3.1\Etapa1.AssemblyInfoInputs.cache
+C:\Users\52999\source\repos\PlatziProyecto\Etapa1\Etapa1\obj\Debug\netcoreapp3.1\Etapa1.AssemblyInfo.cs
+C:\Users\52999\source\repos\PlatziProyecto\Etapa1\Etapa1\obj\Debug\netcoreapp3.1\Etapa1.csproj.CoreCompileInputs.cache
+C:\Users\52999\source\repos\PlatziProyecto\Etapa1\Etapa1\obj\Debug\netcoreapp3.1\Etapa1.dll
+C:\Users\52999\source\repos\PlatziProyecto\Etapa1\Etapa1\obj\Debug\netcoreapp3.1\Etapa1.pdb
+C:\Users\52999\source\repos\PlatziProyecto\Etapa1\Etapa1\obj\Debug\netcoreapp3.1\Etapa1.genruntimeconfig.cache
