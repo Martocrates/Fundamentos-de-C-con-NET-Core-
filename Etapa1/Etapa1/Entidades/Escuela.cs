@@ -4,10 +4,11 @@ using System.Text;
 
 namespace Etapa1.Entidades
 {
-    class Escuela
+    public class Escuela
     {
 
         string nombre;
+        public string UniqueID { get; private set; } = Guid.NewGuid().ToString();
         public string Nombre
         {
             get { return "Copia: " + nombre; }
@@ -18,6 +19,8 @@ namespace Etapa1.Entidades
         public string Pais { get; set; }
         public string Ciudad { get; set; }
         public TiposEscuela TiposEscuela { get; set; }
+
+        public List<Curso> Cursos { get; set; }
        
         public Escuela(string nombre, int anio) => (Nombre, AnioCreacion) = (nombre, anio);
         public Escuela(string nombre, int anio, TiposEscuela tipo,
