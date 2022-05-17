@@ -4,9 +4,11 @@ using System.Text;
 
 namespace Etapa1.Entidades
 {
-   public class Asignatura: ObjetoEscuelaBase
+    public interface ILugar
     {
-        
-        
+        string Direccion { get; set; }
+
+        void LimpiarLugar();
+
     }
 }

@@ -1,39 +1,51 @@
-﻿using System;
+﻿using Etapa1.Util;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Etapa1.Entidades
 {
-    public class Escuela
+    public class Escuela : ObjetoEscuelaBase, ILugar
     {
+        public int AñoDeCreacion { get; set; }
 
-        string nombre;
-        public string UniqueID { get; private set; } = Guid.NewGuid().ToString();
-        public string Nombre
-        {
-            get { return "Copia: " + nombre; }
-            set { nombre = value.ToUpper(); }
-
-        }
-        public int AnioCreacion { get; set; }
         public string Pais { get; set; }
         public string Ciudad { get; set; }
-        public TiposEscuela TiposEscuela { get; set; }
 
+        public string Direccion { get; set; }
+
+        public TiposEscuela TipoEscuela { get; set; }
         public List<Curso> Cursos { get; set; }
-       
-        public Escuela(string nombre, int anio) => (Nombre, AnioCreacion) = (nombre, anio);
-        public Escuela(string nombre, int anio, TiposEscuela tipo,
-                       string pais = "", string ciudad = "")
-        { (Nombre, AnioCreacion) = (nombre, anio);
+
+        public Escuela(string nombre, int año) => (Nombre, AñoDeCreacion) = (nombre, año);
+
+        public Escuela(string nombre, int año,
+                       TiposEscuela tipo,
+                       string pais = "", string ciudad = "") : base()
+        {
+            (Nombre, AñoDeCreacion) = (nombre, año);
             Pais = pais;
             Ciudad = ciudad;
         }
 
         public override string ToString()
         {
-            return $"Nombre: {Nombre} Tipo: {TiposEscuela}\n Pais: {Pais}, Ciudad: {Ciudad}";
+            return $"Nombre: \"{Nombre}\", Tipo: {TipoEscuela} {System.Environment.NewLine} Pais: {Pais}, Ciudad:{Ciudad}";
         }
 
+        public void LimpiarLugar()
+        {
+
+            Printer.DrawLine();
+            Console.WriteLine("Limpiando Escuela..");
+
+            foreach (var curso in Cursos)
+            {
+                curso.LimpiarLugar();
+            }
+
+            Printer.WriteTitle($"Escuela {Nombre} Limpia");
+            Printer.Beep(1000, cantidad: 3);
+        }
     }
 }
